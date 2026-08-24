@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: inventory-service
+  config:
+    import: "optional:configserver:"
+  cloud:
+    config:
+      uri: http://localhost:9000
+
+server:
+  port: 8001
+  servlet:
+    session:
+      persistent: false
